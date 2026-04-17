@@ -1,6 +1,6 @@
-# Face Biometry Lab — Premium
+# QWEEN FACE — Premium
 
-Премиальный черно-белый веб-сервис биометрического анализа лица.
+Премиальный черно-белый веб-сервис биометрического анализа лица с улучшенной устойчивостью к ошибкам загрузки.
 
 ## Что улучшено
 
@@ -26,10 +26,10 @@ python app.py
 ## Сборка ZIP для скачивания
 
 ```bash
-zip -r face-biometry-lab-premium.zip . -x ".git/*" -x ".venv/*" -x "outputs/*" -x "uploads/*" -x "__pycache__/*"
+zip -r qween-face.zip . -x ".git/*" -x ".venv/*" -x "outputs/*" -x "uploads/*" -x "__pycache__/*"
 ```
 
-После команды архив `face-biometry-lab-premium.zip` будет в корне проекта.
+После команды архив `qween-face.zip` будет в корне проекта.
 
 Также в веб-интерфейсе доступна прямая ссылка `GET /download/project-zip`, которая собирает и отдает ZIP автоматически.
 
