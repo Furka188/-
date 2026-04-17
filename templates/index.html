@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Face Biometry Lab — Premium</title>
+    <link rel="stylesheet" href="/static/styles.css" />
+  </head>
+  <body>
+    <div class="noise"></div>
+    <header class="hero">
+      <p class="eyebrow">PREMIUM ANALYTICS SYSTEM</p>
+      <h1>FACE BIOMETRY LAB</h1>
+      <p class="subtitle">
+        Премиальный черно-белый досье-анализ: метрики, симметрия, качество кадра, отличительные точки.
+      </p>
+      <a class="download-project" href="/download/project-zip">Скачать весь проект (ZIP)</a>
+    </header>
+
+    <main class="layout">
+      <section class="card">
+        <div class="card-head">
+          <h2>Single Photo Dossier</h2>
+          <span class="tag">ANALYZE</span>
+        </div>
+        <form id="analyzeForm" class="form-grid">
+          <label>
+            Входное фото
+            <input type="file" name="photo" accept="image/*" required />
+          </label>
+          <button type="submit">Сформировать досье</button>
+        </form>
+        <div id="analyzeOutput" class="result"></div>
+      </section>
+
+      <section class="card">
+        <div class="card-head">
+          <h2>Dual Photo Differentiation</h2>
+          <span class="tag">COMPARE</span>
+        </div>
+        <form id="compareForm" class="form-grid two-cols">
+          <label>
+            Фото A
+            <input type="file" name="photo_1" accept="image/*" required />
+          </label>
+          <label>
+            Фото B
+            <input type="file" name="photo_2" accept="image/*" required />
+          </label>
+          <button type="submit" class="full">Сравнить и выделить точки</button>
+        </form>
+        <div id="compareOutput" class="result"></div>
+      </section>
+    </main>
+
+    <script src="/static/app.js"></script>
+  </body>
+</html>
